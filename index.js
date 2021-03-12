@@ -48,7 +48,7 @@ function consecutiveHighlight(query, text, opts) {
     "</" +
     opts.tag +
     ">"
-  let after = text.slice(last + 1, text.length)
+  let after = text.slice(offset + last + 1, text.length)
 
   return last < query.length - 1 ? null : before + match + after
 }

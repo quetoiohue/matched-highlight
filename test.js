@@ -2,7 +2,7 @@ const highlight = require('./index')
 
 test('Test consecutive matched text', () => {
     expect(highlight('thin', 'this is a thin text on input', {tag: 'strong', consecutive: true}))
-    .toBe('this is a <strong>thin</strong> is a thin text on input')
+    .toBe('this is a <strong>thin</strong> text on input')
 })
 
 test('Test nonconsecutive matched text', () => {
